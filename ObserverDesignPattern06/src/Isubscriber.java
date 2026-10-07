@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
 public interface Isubscriber {
+    void update();//this function will be called by channel
 }

@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+public class CSubscriber implements Isubscriber{
 
-public class CSubscriber {
+
+    public String nameofsubscriber;
+    public CChannel c;
+
+    public CSubscriber(String nameofsubscriber, CChannel c) {
+        this.nameofsubscriber = nameofsubscriber;
+        this.c = c;
+    }
+
+    @Override
+    public void update() {
+      c.getlatestvideotitle();
+    }
 }
